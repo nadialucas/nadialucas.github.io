@@ -18,7 +18,7 @@ tagline:             About me.
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Ok does this work?
+  A research assistant at the Energy Policy Institute at the University of Chicago
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
