@@ -1,7 +1,7 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
-qwtel:
+nadialucas:
   name:              Nadia Lucas
   email:             nrlucas@uchicago.edu
 
@@ -16,7 +16,7 @@ qwtel:
 
   # This photo will be used in the about section
   picture:
-    src:             https://placehold.it/128x128
+    src:             ../headshot.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
       1x:            https://placehold.it/128x128
