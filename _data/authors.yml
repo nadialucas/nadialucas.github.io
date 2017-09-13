@@ -15,11 +15,11 @@ nadialucas:
 
   # This photo will be used in the about section
   picture:
-    src:             hydejack/headshot.png
+    src:             ./hydejack/assets/img/headshot.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            hydejack/headshot.png
-      2x:            hydejack/headshot.png
+      1x:            ./hydejack/assets/img/headshot.png
+      2x:            ./hydejack/assets/img/headshot.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
