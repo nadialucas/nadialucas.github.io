@@ -10,4 +10,4 @@ order: 4
 > [CV]
 {:.lead}
 
-[CV]: /Lucas091417.pdf
+[CV]: ./Lucas_CV.pdf
