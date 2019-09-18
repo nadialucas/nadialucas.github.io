@@ -1,90 +1,51 @@
-~~~
- __  __                __                                     __
-/\ \/\ \              /\ \             __                    /\ \
-\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
- \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
-  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
-   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
-    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
-                /\___/                \ \____/
-                \/__/                  \/___/
-~~~
+# *folio
+A simple theme for showcasing your work, emphasis on whitespace, transparency, and helvetica. 
 
-# Hydejack
-Hydejack is a cutting-edge Jekyll theme that combines the best of static sites and modern web apps.
-It features a suite of JavaScript that makes the page feel like an app, without sacrificing backwards-compatibility,
-page-load speed or SEO.
 
-> Your presence on the web — A [blog], a [portfolio] and a [resume].
+<a href="http://liabogoev.com/-folio">Live Demo</a>
 
-It aims to be the complete package for professionals on the web.
-It features a blog suitable for both prose and technical documentation,
-a showcase for projects and a resume that fits with the rest of the design.
+<hr/>
 
-## [Demo](https://qwtel.com/hydejack/)
-It's best to just [see it in action](https://qwtel.com/hydejack/).
 
 ## Features
-Both the PRO *and* free version includes all of the features listed below:
 
-* Full in-app page loading — no Flash of White, no Flash of Unstyled Content[^1]
-* Advanced animations, inspired by Material Design
-* A customizable sidebar that turns into a touch-enabled app drawer on mobile
-* Near-perfect [Google PageSpeed Score][gpss][^2]
-* Even higher *perceived speed* thanks to pre-fetching and latency-hiding
-* Support for categories and tags — even when hosting on GitHub Pages
-* Built-in collection of social media icons
-* Author section below each article and multiple authors
-* Simple and semantic HTML — can be viewed even with text-based browsers
-* Progressive enhancement — sacrifice features, not content
-* Google Analytics and Google Fonts support
-* Blog layout with pagination
-* Syntax highlighting
-* Math formulas via LaTeX
-* Disqus comments
-* RSS feed
-* Print layout
+### Collections
+This Jekyll theme implements collections to let you break up your work into categories. The example is divided into poetry and portfolio, but easily revamp this into recipes, apps, short stories, limmericks, whatever your creative work is. 
+> To do this, edit the collections in the config file, create a corresponding folder, and update the portfolio and poetry source files. 
 
-## [Documentation][docs]
-Hydejack is documented extensively.
-You can read it [on this site][docs], in the [repository's wiki][wiki], or [download the PDF][download].
+Three different layouts are included—the poetry layout, for a simple list of entries, the blog layout (index.html), for more detailed descriptive list of entries, and the portfolio layout. The portfolio layout overlays a descriptive hoverover on a background image. If no image is provided, the square is auto-filled with the chosen theme color. Thumbnail sizing is not necessary, as the grid crops images perfectly. 
 
-## Download
-There are two versions of Hydejack: The Free Version includes basic blogging functionality,
-as did previous versions of the theme.
-The new PRO Version includes additional features for professionals:
-A [portfolio], a [resume] layout and a [welcome] page to feature your favorite projects and posts.
+### Portfolio Specifics
+You can easily add full pages for each of the projects in your portfolio. If you want one to link to an external website, create a file for it in _portfolio, and  fil in the YAML front matter as you would for another, but with a redirect, like so: 
 
-This table details what is and isn't included in each respective version.
+	---
+	layout: post
+	title: Project
+	description: a project that redirects to another website
+	img:
+	redirect: https://otherpage.com
+	--- 
 
-| Version                          | Free               | PRO                |
-|:---------------------------------|:------------------:|:------------------:|
-| Blog                             | &#x2714;           | &#x2714;           |
-| Features (see below)             | &#x2714;           | &#x2714;           |
-| [Portfolio] Layout               |                    | &#x2714;           |
-| [Resume] Layout                  |                    | &#x2714;           |
-| [Welcome] Layout                 |                    | &#x2714;           |
-| License                          | [MIT][license]     | [PRO]              |
-| Price                            | Free               | $34                |
-| | [**Download on GitHub**][download]<br/> – or – <br/>[**Use the RubyGem**][gem] | [**Buy Now – $34**][buy] [^3] |
+### Theming
+Six beautiful theme colors have been selected to choose from. The default is red, but quickly change it by editing the _base.scss file in line 40. The color variable are listed there, as well. 
+
+### Photos
+Photo formatting is made simple using rows of a 3-column system. Make photos 1/3, 2/3, or full width. Easily create beautiful grids within your blog posts and projects pages. 
+
+### Code Highlighting
+This theme implements Jekyll's built in code syntax highlighting with Pygments. Just use a liquid tag to delineate your code: 
+{% highlight python %}
+	code code code
+{% endhighlight %}
 
 
-[^1]: Applies after the initial page load.  
-[^2]: Actual page load speed depends on your hosting provider as well as discipline regarding resolution of images and
-usage of 3rd party plugins.  
-[^3]: Transactions secured by [Stripe](https://stripe.com). Downloads handled by [Simple Goods](https://simplegoods.co/).  
+<hr/>
+The MIT License (MIT)
+Copyright (c) 2015 Lia Bogoev
 
-[blog]: https://qwtel.com/hydejack/blog/
-[portfolio]: https://qwtel.com/hydejack/projects/
-[resume]: https://qwtel.com/hydejack/resume/
-[welcome]: https://qwtel.com/hydejack/
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-[license]: LICENSE.md
-[pro]: licenses/PRO-license.md
-[docs]: docs/6.6.1/index.md
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-[download]: https://github.com/qwtel/hydejack/releases
-[gem]: https://rubygems.org/gems/jekyll-theme-hydejack
-[buy]: https://app.simplegoods.co/i/AQTTVBOE
-[wiki]: https://github.com/qwtel/hydejack/wiki
-[gpss]: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fqwtel.com%2Fhydejack%2F
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
