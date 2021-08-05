@@ -1,7 +1,7 @@
 ---
 layout: page
 title: blog
-menutitle: blog
+menutitle:
 permalink: /blog/
 ---
 

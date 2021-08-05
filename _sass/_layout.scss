@@ -281,3 +281,40 @@ text-align: center;
 vertical-align: middle;
 font-size: $caption_font_size;
 }
+
+
+/* Teaching layout */
+
+.class-list {
+margin: 10px 0;
+list-style: none;
+    > li {
+margin-bottom: $vertical-spacing-unit;
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 14px;
+      letter-spacing: .5px;
+      color: $grey-color-dark;
+    }
+
+}
+
+.class-title {
+font-size: 14px;
+letter-spacing: -.5px;
+line-height: 1.5;
+ span {
+   font-size: 16px;
+   letter-spacing: 1px;
+   font-weight: bold;
+   display: block;
+   margin-bottom: 10px;
+ }
+ em {
+   margin-top: 10px;
+   font-style: italic;
+   color: $theme-color;
+   display: block;
+ }
+}
