@@ -21,9 +21,6 @@ collections:
   research:
     output: true
     permalink: /research/:path/
-  blog:
-    output: true
-    permalink: /blog/:path/
   teaching:
     output: true
     permalink: /teaching/:path/
